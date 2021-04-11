@@ -1,0 +1,111 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="admin_renzi.master.cs" Inherits="admin_admin_renzi" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head id="Head1" runat="server">
+    <title></title>
+
+    <link href="CSS/style.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="JS/jquery-1.8.2.min.js"></script>
+    <script type="text/javascript" src="JS/lhgdialog/lhgdialog.js?skin=idialog"></script>
+    <script type="text/javascript">
+        $(function () {
+            //顶部导航切换
+            $(".nav li a").click(function () {
+                $(".nav li a.selected").removeClass("selected")
+                $(this).addClass("selected");
+            })
+        })  
+    </script>
+    <script type="text/javascript">
+        $(function () {
+            
+            //导航切换
+            $(".menuson li").click(function () {
+                $(".menuson li.active").removeClass("active");
+                $(this).addClass("active");
+            });
+
+            $('.title').click(function () {
+                var $ul = $(this).next('ul');
+                $('dd').find('ul').slideUp();
+                if ($ul.is(':visible')) {
+                    $(this).next('ul').slideUp();
+                } else {
+                    $(this).next('ul').slideDown();
+                }
+            });
+        })
+
+        function About() {
+            $.dialog({
+                width: 400,
+                height: 10,
+                title: '系统信息',
+                max: false,
+                min: false,
+                content: 'Wcryr人资管理系统'
+            });
+        }
+    </script>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    
+    </asp:ContentPlaceHolder>
+    </head>
+    <body style="background: url(images/topbg.gif) repeat-x;">
+        <form id="form1" runat="server">
+        <div class="top">
+              <div class="topleft"> <a href="" target="_parent"> <img src="images/logo.png" title="系统首页"  alt="" /></a> </div>
+              <ul class="nav">
+           
+            <li><a href="addUser.aspx" > <img src="images/icon03.png" title="增加新会员" width="45" height="45" alt="" />
+              <h2>增加员工</h2>
+              </a></li>
+            <li><a href="SelectALLUser.aspx" > <img src="images/icon01.png" title="会员管理" width="45" height="45" alt="" />
+              <h2>全部员工</h2>
+              </a></li>
+            <li><a href="MyInfo.aspx" > <img src="images/i07.png" title="我的信息" width="45" height="45" alt="" />
+              <h2>我的信息</h2>
+              </a></li> 
+              <li>
+              <h2>&nbsp</h2></li>
+          </ul>
+              <div class="topright">
+            <ul>
+                  <li><a href="javascript:About();">关于</a></li>
+                  <li>
+                <asp:LinkButton ID="lbtnExit" runat="server" onclick="lbtnExit_Click">退出</asp:LinkButton>
+              </li>
+                </ul>
+            <div class="user"> <span>
+              <asp:Literal ID="Lit_Name" runat="server"></asp:Literal>
+              </span> </div>
+          </div>
+            </div>
+        <div style="background:#F0FFFF;" class="left">
+              <div class="lefttop" ><span></span>系统导航</div>
+              <dl class="leftmenu">
+            <dd>
+                  <div class="title"> <span> <img src="images/leftico01.png" alt=""/></span>人事管理 </div>
+                  <ul class="menuson">
+                <li><cite></cite><a href="SelectALLUser.aspx" target="_parent">员工信息</a><i></i></li>
+                <li><cite></cite><a href="addUser.aspx" target="_parent" >添加员工</a><i></i></li>
+              </ul>
+                </dd>
+            <dd>
+                  <div class="title"> <span> <img src="images/leftico01.png" /></span>培训管理</div>
+                  <ul class="menuson">
+                <li><cite></cite><a href="TrainUser.aspx" >员工培训意愿</a><i></i></li>
+              </ul>
+                </dd>
+          </dl>
+            </div>
+    <div class="nr">
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+    </div>
+    </form>
+</body>
+</html>

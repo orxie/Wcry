@@ -1,0 +1,303 @@
+body {
+	background: #ffffff;
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+
+}
+
+/*---------------------------------------
+    字样式              
+-----------------------------------------*/
+h1,h2,h3,h4,h5,h6 {
+  font-weight: 600;
+}
+
+h3,h5 {
+  font-weight: 500;
+}
+
+h1 {
+    font-size: 40px;
+    letter-spacing: 2px;
+}
+
+h2 {
+  font-size: 30px;
+  text-transform: uppercase;
+}
+
+h3 {
+  line-height: 36px;
+}
+
+h5 {
+    letter-spacing: 1px;
+    padding-top: 10px;
+}
+
+p {
+    color: #707070;
+    font-size: 14px;
+    line-height: 24px;
+}
+
+a {
+  text-decoration: none !important;
+  outline: none;
+}
+
+
+/*---------------------------------------
+    按钮样式               
+-----------------------------------------*/
+#intro .btn {
+    background: transparent;
+    border: 2px solid #ffffff;
+    border-radius: 10px;
+    color: #ffffff;
+    font-weight: 600;
+    letter-spacing: 1px;
+    font-size: 16px;
+    padding: 14px 42px;
+    margin-top: 42px;
+    margin-right: 12px;
+    -webkit-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
+    width:190px;
+    height:50px;
+
+}
+#intro .btn-danger,
+{
+  background: transparent;
+  border-color: #ffffff;
+  color: #ffffff; 
+}
+#intro .btn-danger:hover 
+{
+     background: #f2545f;
+     border-color: transparent;
+}
+#intro .btn-default:hover {
+    background: #ffffff;
+    color: #333333;
+    border-color: transparent;
+}
+
+/*---------------------------------------
+          字的样式
+-----------------------------------------*/
+#intro {
+    -webkit-background-size: cover;
+    background-position: center center;
+    color: #ffffff;
+    display: -webit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    height: 90vh;
+    text-align: center;
+}
+.intro h3 {
+  letter-spacing: 2px;
+}
+
+.nr{
+	width: 100%;
+	height:400px;
+	}
+.gg{
+	width: 100%;
+	height:1100px;
+	background-color: #FFF;	
+	}
+.baxx
+{
+    width: 100%;
+    height: 100px;
+    line-height:100px;
+    overflow:hidden;
+    background-color: #000;
+    text-align: center;
+}
+.baxx1
+{
+    line-height: 20px;
+    position: relative;
+    top: 30px;
+    text-align: center;
+    font-weight: 600;
+}
+	
+.gao{
+	width: 100%;
+	height:760px;
+	background-color: #999;	
+	}
+#main	{
+	padding:2%;
+	width: 1030px;
+	height:400;
+	margin:2% auto;
+	}
+.nr1{
+
+	width: 1030px;
+	height:400;
+	margin:2% auto;
+	}
+
+.modal-top
+{ top:15%;
+    }
+ /*---------------------------------------
+   导航条样式              
+-----------------------------------------*/
+.custom-navbar {
+    margin-bottom: 0;
+    background-color: #101010;
+}
+
+.custom-navbar .navbar-brand {
+    color: #ffffff;
+    font-weight: 600;
+    font-size: 3rem;
+    line-height: 40px;
+}
+
+.custom-navbar .nav li a {
+    color: #ddd;
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: 0.6px;
+    text-transform: uppercase;
+    line-height: 40px;
+    transition: all 0.4s ease-in-out;
+}
+
+.custom-navbar .nav li a:hover {
+    background: transparent;
+    color: #66ccff;
+}
+
+.custom-navbar .navbar-nav > li > a:hover,
+.custom-navbar .navbar-nav > li > a:focus {
+  background-color: transparent;
+}
+
+.custom-navbar .nav li.active > a {
+    background-color: transparent;
+    color: #66ccff;
+}
+
+.custom-navbar .navbar-toggle {
+    border: none;
+    padding-top: 10px;
+}
+
+.custom-navbar .navbar-toggle {
+    background-color: transparent;
+}
+
+
+.custom-navbar {
+   padding: 20px 0;  
+   border-bottom: 0;
+   background: 0 0; 
+}
+.custom-navbar.top-nav-collapse {
+   background: #101010; 
+   padding: 0;
+}
+
+/*---隐藏层----*/
+body,table{
+    font-size:12px;
+}
+table{
+    table-layout:fixed;
+    empty-cells:show; 
+    border-collapse: collapse;
+    margin:0 auto;
+}
+td{
+    height:20px;
+}
+
+/*这个是借鉴一个论坛的样式*/
+.t1{
+    border:1px solid #cad9ea;
+    color:#666;
+}
+.t1 th {
+    background-image: url(th_bg1.gif);
+    background-repeat::repeat-x;
+    height:30px;
+}
+.t1 td,table.t1 th{
+    border:1px solid #cad9ea;
+    padding:0 1em 0;
+}
+.t1 tr.a1{
+    background-color:#f5fafe;
+} 
+
+
+table.t2{
+
+    color:#666;
+}
+table.t2 th {
+    background-image: url(th_bg1.gif);
+    background-repeat::repeat-x;
+    height:30px;
+}
+table.t2 td,table.t2 th{
+    border:1px solid #cad9ea;
+    padding:0 1em 0;
+}
+table.t2 tr.a1{
+    background-color:#f5fafe;
+} 
+
+/*广告*/
+.ALL
+{
+    width:100%;
+    height:1000px;
+    }
+.ziti
+{
+    position: relative;
+    top: 26%;
+    margin: 0px auto;
+    width: 670px;
+    height: 100px;
+    font-weight: 900;
+    text-decoration: blink;
+    font-size: 40px;
+    color:  White;
+    text-transform: none;
+    font-family: 华文中宋;
+    text-align: center;
+}
+
+.ziti1
+{
+    position: relative;
+    top: 300px;
+    margin: 0px auto;
+    width: 670px;
+    height: 100px;
+    font-weight: 900;
+    text-decoration: blink;
+    font-size: 50px;
+    color:  Black;
+    text-transform: none;
+    font-family: 方正兰亭超细黑简体;
+    text-align: center;
+}

@@ -1,0 +1,5 @@
+E:\实训项目\WCry系统资源\Wcry人资管理系统\Entity\bin\Debug\Entity.dll
+E:\实训项目\WCry系统资源\Wcry人资管理系统\Entity\bin\Debug\Entity.pdb
+E:\实训项目\WCry系统资源\Wcry人资管理系统\Entity\obj\Debug\Entity.csprojResolveAssemblyReference.cache
+E:\实训项目\WCry系统资源\Wcry人资管理系统\Entity\obj\Debug\Entity.dll
+E:\实训项目\WCry系统资源\Wcry人资管理系统\Entity\obj\Debug\Entity.pdb
